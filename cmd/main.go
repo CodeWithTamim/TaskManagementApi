@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/CodeWithTamim/TaskManagementApi/config"
+	"github.com/CodeWithTamim/TaskManagementApi/routes"
 	"github.com/CodeWithTamim/TaskManagementApi/utils"
 )
 
@@ -13,7 +14,7 @@ func init() {
 
 func main() {
 
-	// token, _ := utils.GenerateJWT("tamimh.dev@gmail.com")
-	// println(token)
-
+	token, _ := utils.CreateJWTClaim("tamimh.dev@gmail.com")
+	println(token)
+	routes.Run()
 }

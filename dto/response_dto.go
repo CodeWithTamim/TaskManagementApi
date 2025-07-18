@@ -5,4 +5,5 @@ type ApiResponse struct {
 	Success    bool   `json:"success"`
 	Error      string `json:"error"`
 	StatusCode uint   `json:"statusCode"`
+	Message    string `json:"message"`
 }
